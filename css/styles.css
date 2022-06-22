@@ -79,17 +79,17 @@
         margin: -1px;
     }
        /*--HEADER-- */
-    .main-nav{
-        display: flex;
-        align-items: center;
-    }
-    
     .header{
         background-color:  var(--background-color);
         border-bottom: 1px solid #ececec;
     }
+
+    .header__content{
+        display: flex;
+        align-items: center;
+    }
     
-    .header-logo{
+    .header__logo{
         font-family: 'Raleway';
         font-weight: 700;
         font-size: 26px;
@@ -99,7 +99,7 @@
         display: flex;
     }
        
-    .header-link{
+    .header__link{
         display: block;
         padding-top: 32px;
         padding-bottom: 32px;
@@ -111,8 +111,9 @@
        
         transition: color var(--hover-focus-duration) cubic-bezier(0.4, 0, 0.2, 1);
     } 
-    .header-link:hover,
-    .header-link:focus{
+
+    .header__link:hover,
+    .header__link:focus{
         color: var(--color-accent);
       }
     
@@ -133,15 +134,16 @@
     }
     
     
-    .header-list{
+    .header__nav{
         display: flex;
         margin-left: 93px;
     }
-    .header-list .header-item + .header-item{
+    .header__nav-list .header__item + .header__item{
         margin-left: 50px;
     }
     
-    .nav-list{
+    
+    .header__nav-list{
         font-weight: 400;
         font-size: 14px;
         line-height: 1.71;
@@ -152,7 +154,7 @@
         margin-left: auto;
     }
     
-    .nav-list .nav-item+.nav-item{
+    .header__nav-list .nav-item+.nav-item{
         margin-left: 50px;
     }
 
@@ -196,7 +198,7 @@
        text-align:center;
     }
 
-    .hero-tittle{
+    .hero__tittle{
         width: 59.4871%;
         font-weight: 900;
         font-size: 44px;
@@ -209,7 +211,7 @@
         margin-bottom: 30px;
     }
 
-    .hero-btn{
+    .hero__btn{
         font-weight: 700;
         font-size: 16px;
         line-height: 1.88;
@@ -232,12 +234,12 @@
         padding-bottom: 94px;
     }
 
-    .advantages-list{
+    .advantages__list{
         display: flex;
         justify-content: center;
     }
      
-    .advantages-tittle {
+    .advantages__tittle {
         font-weight: 700;
         font-size: 14px;
         line-height: 1.14;
@@ -248,15 +250,15 @@
         margin-bottom: 10px;
     }
 
-    .advantages-item + .advantages-item{
+    .advantages__item + .advantages__item{
         margin-left: var(--typical-gap);
     }
 
-    .advantages-item{
+    .advantages__item{
         min-width: 270px;
     }
     
-    .advantages-text{
+    .advantages__text{
         font-weight: 400;
         margin: 0;
         font-size: 14px;
@@ -265,7 +267,7 @@
         color: var(--first-text-color);
     }
 
-    .advantages-item-icon{
+    .advantages__icon-content{
         height: 120px;
         margin-bottom: var(--typical-gap);
         display: flex;
@@ -281,20 +283,20 @@
         padding-bottom: 94px;
     }
 
-    .job-list{
+    .job__list{
         display: flex;
         justify-content: center;
     }
 
-    .job-item + .job-item{
+    .job__item + .job__item{
         margin-left: var(--typical-gap);
     }
 
-    .job-thumb{
+    .job__content{
         position: relative;
     }
 
-    .job-thumb-text{
+    .job__text{
         position: absolute;
         margin: 0;
         width: 100%;
@@ -306,7 +308,7 @@
         background: rgba(47, 48, 58, 0.8);
     }
 
-    .job-tittle {
+    .job__tittle {
         font-weight: 700;
         font-size: 36px;
         line-height: 1.16;
