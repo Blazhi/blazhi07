@@ -26,7 +26,7 @@
 
     ul,ol{
         margin: 0;
-        padding-left: 0;
+        padding: 0;
     }
 
     img{
@@ -62,7 +62,7 @@
         text-decoration: none;
     }
 
-    .logo-part{
+    .logo__part{
         color: var(--color-accent);
     }
 
@@ -87,8 +87,7 @@
     .header-content{
         display: flex;
         align-items: center;
-        padding-top:32px;
-        padding-bottom:32px;
+        
     }
     
     .header{
@@ -96,10 +95,7 @@
         border-bottom: 1px solid #ececec;
     }
     
-    .header__logo{
-        margin-right: 93px;
-        color: var(--header-color);
-    }
+    
      
     .logo{
         font-family: 'Raleway';
@@ -107,21 +103,26 @@
         font-size: 26px;
         line-height: 1.19;
         letter-spacing: 0.03em; 
+        color: var(--header-color);
     }
 
     .header__nav-list{
         display: flex;
+        margin-left: 93px;
     }
    
-    .header__nav-list > :not(:last-child) {
-        margin-right: 50px;
+    .header__nav-list .header__nav-item + .header__nav-item{
+        margin-left: 50px;
     }
     .header__nav-link{
-        display:block;
-        
-        font-weight:500;
-        letter-spacing:.02em;
-        color:inherit;
+        display: block;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        color: inherit;
         transition: color var(--hover-focus-duration) cubic-bezier(0.4, 0, 0.2, 1);
     } 
 
@@ -354,7 +355,7 @@
         text-align: center;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
-
+        background-color: #FFFFFF;
         flex-basis: calc(100%/4-30px);
         margin-left: 30px ;
     }
@@ -391,7 +392,7 @@
     .social-list__link {
         width: 44px;
         height: 44px;
-        background-color: #F5F4FA;
+        background-color: #FFFFFF;
         border-radius: 50%;
         display: flex;
         align-items: center;
@@ -409,7 +410,8 @@
     }
 
     .social-list__icon{
-        fill:currentColor;  
+        fill:currentColor;
+       
     }
     /*---cliets----*/
     
