@@ -105,14 +105,15 @@
         letter-spacing: 0.03em; 
         color: var(--header-color);
     }
-
+    
     .header__nav-list{
         display: flex;
         margin-left: 93px;
     }
    
-    .header__nav-list .header__nav-item + .header__nav-item{
-        margin-left: 50px;
+    
+    .header__nav-list > :not(:last-child) {
+        margin-right: 50px;
     }
     .header__nav-link{
         display: block;
