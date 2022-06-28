@@ -4,15 +4,15 @@
 @import "./components/modal";
 @import "./utils/hidden";
 @import "./utils/section";
-
-
-
-@import"./layot/header";
+@import "./utils/logo"
+/////////////////////////////////
+@import "./layot/header";
 @import "./layot/hero";
 @import "./layot/advantages";
 @import "./layot/job";
 @import "./layot/team";
 @import "./layot/clients";
+////////////////////////////////
 @import "./layot/examples";
 @import "./layot/projects";
 @import "./layot/footer";

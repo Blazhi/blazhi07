@@ -76,12 +76,11 @@
     
     transition: color var(--hover-focus-duration) cubic-bezier(0.4, 0, 0.2, 1),
     background-color var(--hover-focus-duration) cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.social-list__link:hover,
-.social-list__link:focus{
-    background-color: #2196F3;
-    color: #FFFFFF;
+            &:hover,
+            &:focus{
+            background-color: #2196F3;
+            color: #FFFFFF;
+        }
 }
 
 .social-list__icon{

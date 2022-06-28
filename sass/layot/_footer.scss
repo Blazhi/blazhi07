@@ -26,23 +26,23 @@
     color: rgba(255, 255, 255, 0.6);
     margin-bottom: 9px;
     transition: color var(--hover-focus-duration) cubic-bezier(0.4, 0, 0.2, 1);
+                &--maps{
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 1.71;
+                letter-spacing: 0.03em;
+                color: var(--second-text-color);
+                
+                transition: color var(--hover-focus-duration) cubic-bezier(0.4, 0, 0.2, 1);
+            }
+                    &:hover,
+                    &:focus,
+                    &--maps:hover,
+                    &--maps:focus {
+                    color: var(--color-accent);
+        }
 }
-.adress__link--maps{
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: var(--second-text-color);
-    
-    transition: color var(--hover-focus-duration) cubic-bezier(0.4, 0, 0.2, 1);
 
-}
-.adress__link:hover,
-.adress__link:focus,
-.adress__link--maps:hover,
-.adress__link--maps:focus {
-    color: var(--color-accent);
-}
 
 .footer-soc{
     margin-left: 70px;
@@ -76,12 +76,13 @@
 
     transition: background-color var(--hover-focus-duration) cubic-bezier(0.4, 0, 0.2, 1),
     fill var(--hover-focus-duration) cubic-bezier(0.4, 0, 0.2, 1);
+            &:hover,
+            &:focus{
+            background-color: #2196F3;
+            fill: #FFFFFF;
+        }
 }
-.footer-soc__link:hover,
-.footer-soc__link:focus{
-    background-color: #2196F3;
-    fill: #FFFFFF;
-}
+
 
 .subscribe{
     margin-left: 93px;
@@ -126,11 +127,12 @@
     letter-spacing: 0.06em;
     border: 0;
     transition: background-color var(--hover-focus-duration) cubic-bezier(0.4, 0, 0.2, 1);
+           &:hover,
+           &:focus{
+            background-color: #212121  ;
 }
-.subscibe__btn:hover,
-.subscibe__btn:focus{
-    background-color: #212121  ;
 }
+
 .subscibe__icon{
     vertical-align:middle;
     margin-left: 10px;
